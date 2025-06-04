@@ -1,16 +1,27 @@
-import { Outlet } from "react-router-dom";
-import  "./MainLayout.css"
+import {} from "react";
+import{Outlet} from 'react-router-dom';
+import cls from "./MainLayout.module.css"
+import { Header } from "../Header"; 
+
+
+
+
+
+
 
 export const MainLayout = () => {
     const currentYear = new Date().getFullYear();
 
     return ( 
-        <div className= "mainLayout">
-            <header>Header</header>
-            <div className= "mainWrapper">
-                <main className= "main"><Outlet/></main>
-                <footer className= "footer"> React Question Cards Application | {currentYear} <br/>
-                By Slava Zv.
+        <div className = {cls.mainLayout}>
+        
+            <Header/>
+                <div className= {cls.mainWrapper}>
+                    <main className= {cls.main}>
+                        <Outlet/>
+                    </main>
+                    <footer className= {cls.footer}> React Question Cards Application | {currentYear} <br/>
+                    By Sviatoslav Zv.
 
                 </footer>
             </div>
