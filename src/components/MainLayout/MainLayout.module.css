@@ -10,6 +10,7 @@
 .mainWrapper {
     height: 100%;
     flex-grow: 1;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
@@ -33,4 +34,5 @@
     align-items: center;
     color: var(--text-color);
     opacity: .7;
+    
 }
